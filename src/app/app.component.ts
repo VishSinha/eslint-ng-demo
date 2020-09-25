@@ -10,5 +10,5 @@ export class AppComponent {
 
   // index.ts
   arr: string[] =
-   ['one', 'two', 'three'];
+  ['one', 'two', 'three'];
 }

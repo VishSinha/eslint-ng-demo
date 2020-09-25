@@ -11,7 +11,7 @@
     "build": "ng build",
     "build:prod": "npm run build -- --prod --aot",
     "e2e": "ng e2e",
-    "pre-commit": "lint-staged"
+    "precommit": "lint-staged"
   },
   "private": true,
   "dependencies": {
@@ -57,7 +57,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm pre-commit"
+      "precommit": "npm precommit"
     }
   }
 }
