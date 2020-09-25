@@ -9,5 +9,5 @@ export class AppComponent {
   title = 'eslint-ng-demo';
 
   // index.ts
-  arr: string[] = ['one', "two", "three"];
+     arr: string[] = ['one', "two", "three"];
 }
