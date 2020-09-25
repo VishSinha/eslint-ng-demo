@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "eslint-ng-demo"
+    }
+  },
+  "defaultProject": "eslint-ng-demo",
+  "cli": {
+    "analytics": false
+  }
 }
