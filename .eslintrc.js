@@ -1,15 +1,25 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
-  ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {
-    '@typescript-eslint/array-type': 'error',
-  },
-};
+  extends: [airbnb-base, prettier],
+   parserOptions: {
+     ecmaVersion: 2018,
+     sourceType: module
+   },
+   env: {
+     browser: true,
+     node: true,
+     es6: true,
+     jest: true,
+   },
+   plugins: [],
+   rules: {
+     'no-unused-vars': [
+       error,
+       {
+         vars: local,
+         args: none
+       }
+     ],
+     'no-plusplus': off,
+     'no-underscore-dangle': off,
+   }
+  };
